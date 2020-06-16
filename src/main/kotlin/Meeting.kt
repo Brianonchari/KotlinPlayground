@@ -22,28 +22,7 @@ class Meeting {
     }
 }
 
-class Participant {
-    var name: Name = Name()
-    var email:Email = Email()
 
-    val participantName: String
-        get() = name.name
-    val canonicalEmail
-        get() = email.email
-}
 
-class Name {
-    var name: String = ""
-        set(value: String) {
-            if (value.isNullOrBlank()) throw java.lang.IllegalArgumentException("Name cannot be blank")
-            field = value
-        }
-}
 
-class Email{
-    var email:String =""
-    set(value:String) {
-        if(value.isNullOrBlank()) throw IllegalArgumentException("Email cannot be blank")
-        field = value
-    }
-}
+
