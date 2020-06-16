@@ -2,10 +2,11 @@ package co.studycode
 
 import java.lang.IllegalArgumentException
 
-class Meeting(val meetingName: String) {
-
-//    constructor(meetingName:String){
-//        this.meetingName = meetingName
+class Meeting(val meetingName: String,val location: Location=Location("")) {
+//
+//     var location:Location =Location("")
+//    constructor(meetingName:String,location: Location):this(meetingName){
+//        this.location = location
 //    }
 
     private val logger = Logger()
