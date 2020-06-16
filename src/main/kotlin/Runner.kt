@@ -1,9 +1,9 @@
 package co.studycode
 
-import java.sql.DriverManager.println
+
 
 fun main() {
-    val meeting = Meeting()
+    val meeting = Meeting("Weekly Progress Review")
     val participant = Participant()
 //    participant.name = "Brian"
     val name= Name()
@@ -16,8 +16,8 @@ fun main() {
 //    participant.email ="Brian@Studycode.com"
     val canonicalEmail = participant.canonicalEmail
     meeting.addParticipants(participant)
-    meeting.meetingName = "Weekly Progress Review"
-    println("Created meeting `${meeting.meetingName}`")
+//    meeting.meetingName = "Weekly Progress Review"
+    println("Created $meeting  with name `${meeting.meetingName}`")
 
 //    meeting.logger
 
