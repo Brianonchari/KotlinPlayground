@@ -1,8 +1,8 @@
 package co.studycode
 
-class Participant {
-    var name: Name = Name()
-    var email:Email = Email()
+class Participant(val name:Name, val email: Email) {
+//    val name: Name = Name()
+//    val email:Email = Email()
 
     val participantName: String
         get() = name.name
